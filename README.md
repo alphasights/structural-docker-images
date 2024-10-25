@@ -22,8 +22,8 @@ If you'd like to publish a new version of any image, please run following
 4. Build & push image
   - Replace `<your-image-name>` with your image name (e.g. `jre-17` or `jre-21`)
   - Run `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/<your-image-name>:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/<your-image-name>:<pick-your-version>`
-
+  - Build process shoudl take around 1 minute (or more). If it is blazing fast - something is not ok and packages aren't updated properly. Try changing something in `Dockerfile`
 ## Last ones executed:
 
-- `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:0.0.5`
-- `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:0.0.5`
+- `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:0.0.7`
+- `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:0.0.7`
