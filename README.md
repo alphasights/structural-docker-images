@@ -27,3 +27,4 @@ If you'd like to publish a new version of any image, please run following
 
 - `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-17:0.0.8`
 - `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/jre-21:0.0.8`
+- `docker buildx build --platform linux/amd64,linux/arm64 --builder container --push . -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/nginx-custom:latest -t 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/nginx-custom:0.0.4`
