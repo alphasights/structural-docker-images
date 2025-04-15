@@ -1,2 +1,2 @@
-FROM 579859358947.dkr.ecr.us-east-1.amazonaws.com/as-platform/nginx:latest
-RUN apk --no-cache upgrade && apk del nginx-module-image-filter nginx-module-xslt nginx-module-njs && apk list --installed
+FROM alpine:3.21.3
+RUN apk add --no-cache openssl nginx curl ca-certificates && apk list --installed
